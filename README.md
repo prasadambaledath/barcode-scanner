@@ -1,18 +1,64 @@
-# React + Vite
+# 📷 QR/Barcode Scanner
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A mobile-optimized React application for scanning QR codes and barcodes using your device's camera.
 
-Currently, two official plugins are available:
+![React](https://img.shields.io/badge/React-19.2-61DAFB?logo=react&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-7.2-646CFF?logo=vite&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-green)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## React Compiler
+- 📱 **Mobile-optimized** — Compact scanner UI designed for one-handed use
+- 🔍 **QR & Barcode support** — Scans both QR codes and traditional barcodes
+- 🎯 **Multi-field scanning** — Scan directly into any input field
+- ⚡ **Real-time scanning** — Instant detection using device camera
+- 🎨 **Clean UI** — Modern, minimal interface with Tailwind CSS
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+## 🚀 Getting Started
 
-Note: This will impact Vite dev & build performances.
+### Prerequisites
 
-## Expanding the ESLint configuration
+- Node.js 18+ 
+- npm or yarn
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/barcode-scanner.git
+cd barcode-scanner
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+```
+
+The app will be available at `http://localhost:5173`
+
+### Build for Production
+
+```bash
+npm run build
+npm run preview
+```
+
+## 📦 Dependencies
+
+- **[react-qr-barcode-scanner](https://www.npmjs.com/package/react-qr-barcode-scanner)** — Camera-based barcode/QR scanning
+- **[Tailwind CSS](https://tailwindcss.com/)** — Utility-first CSS framework
+- **[Vite](https://vitejs.dev/)** — Next-generation frontend tooling
+
+## 📱 Browser Support
+
+Works on all modern browsers with camera access:
+- Chrome/Edge (Desktop & Mobile)
+- Safari (iOS 11+)
+- Firefox
+
+> ⚠️ **Note:** Camera access requires HTTPS in production. Localhost works without HTTPS during development.
+
+## 📄 License
+
+MIT License — feel free to use this project for personal or commercial purposes.
