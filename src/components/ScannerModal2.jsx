@@ -1,7 +1,7 @@
 import BarcodeScanner from "react-qr-barcode-scanner";
 
 // Reusable Scanner Modal Component
-function ScannerModal({ open, onClose, onScan }) {
+function ScannerModal2({ open, onClose, onScan }) {
   if (!open) return null;
 
   return (
@@ -16,6 +16,7 @@ function ScannerModal({ open, onClose, onScan }) {
         >
           <BarcodeScanner
             onUpdate={(err, result) => {
+              console.log(result);
               if (result) onScan(result.text);
               if (err) {
                 console.log(err?.message || "Error while scanning");
@@ -44,4 +45,4 @@ function ScannerModal({ open, onClose, onScan }) {
   );
 }
 
-export default ScannerModal;
+export default ScannerModal2;
