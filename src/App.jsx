@@ -9,8 +9,8 @@ function App() {
       <Header />
       <main className="pt-16">
         <Routes>
-          <Route path="/" element={<Demo1 />} />
-          <Route path="/demo2" element={<Demo2 />} />
+          <Route path="/barcode-scanner" element={<Demo1 />} />
+          <Route path="/barcode-scanner/demo2" element={<Demo2 />} />
         </Routes>
       </main>
     </BrowserRouter>

@@ -9,26 +9,13 @@ function Header() {
         </h1>
         <nav className="flex gap-1">
           <NavLink
-            to="/"
-            className={({ isActive }) =>
-              `px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
-                isActive
-                  ? "bg-blue-600 text-white"
-                  : "text-gray-600 hover:bg-gray-100"
-              }`
-            }
-          >
+            to="/barcode-scanner"
+            className="px-4 py-2 rounded-lg text-sm font-medium transition-colors text-gray-600 hover:bg-gray-100">
             Demo 1
           </NavLink>
           <NavLink
-            to="/demo2"
-            className={({ isActive }) =>
-              `px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
-                isActive
-                  ? "bg-blue-600 text-white"
-                  : "text-gray-600 hover:bg-gray-100"
-              }`
-            }
+            to="/barcode-scanner/demo2"
+            className="px-4 py-2 rounded-lg text-sm font-medium transition-colors text-gray-600 hover:bg-gray-100"
           >
             Demo 2
           </NavLink>
