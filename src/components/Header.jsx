@@ -10,12 +10,22 @@ function Header() {
         <nav className="flex gap-1">
           <NavLink
             to="/barcode-scanner"
-            className="px-4 py-2 rounded-lg text-sm font-medium text-gray-600  whitespace-nowrap">
+            end
+            className={({ isActive }) =>
+              `px-4 py-2 rounded-lg text-sm font-medium whitespace-nowrap ${
+                isActive ? "bg-indigo-600 text-white" : "text-gray-600 hover:bg-gray-100"
+              }`
+            }
+          >
             Demo 1
           </NavLink>
           <NavLink
             to="/barcode-scanner/demo2"
-            className="px-4 py-2 rounded-lg text-sm font-medium text-gray-600 whitespace-nowrap"
+            className={({ isActive }) =>
+              `px-4 py-2 rounded-lg text-sm font-medium text-gray-600 whitespace-nowrap ${
+                isActive ? "bg-indigo-600 text-white" : "text-gray-600 hover:bg-gray-100"
+              }`
+            }
           >
             Demo 2
           </NavLink>
