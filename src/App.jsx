@@ -7,7 +7,7 @@ function App() {
   return (
     <BrowserRouter>
       <Header />
-      <main className="pt-16">
+      <main>
         <Routes>
           <Route path="/barcode-scanner" element={<Demo1 />} />
           <Route path="/barcode-scanner/demo2" element={<Demo2 />} />

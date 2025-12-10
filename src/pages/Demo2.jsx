@@ -28,7 +28,7 @@ function Demo2() {
         <div className="flex items-center gap-3">
           <input
             type="text"
-            className="flex-1 border rounded-xl p-2"
+            className="flex-1 border rounded-xl p-2 bg-white text-gray-500 focus:outline-none focus:ring-1 focus:ring-gray-600"
             placeholder="Scan for Field 1"
             value={field1}
             onChange={(e) => setField1(e.target.value)}
@@ -46,7 +46,7 @@ function Demo2() {
         <div className="flex items-center gap-3">
           <input
             type="text"
-            className="flex-1 border rounded-xl p-2"
+            className="flex-1 border rounded-xl p-2 bg-white border-gray-300 text-gray-500 focus:outline-none focus:ring-1 focus:ring-gray-600"
             placeholder="Scan for Field 2"
             value={field2}
             onChange={(e) => setField2(e.target.value)}
