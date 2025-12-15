@@ -6,7 +6,6 @@ import Demo2 from "./pages/Demo2";
 function App() {
   return (
     <BrowserRouter>
-      <Header />
       <main>
         <Routes>
           <Route path="/barcode-scanner" element={<Demo1 />} />
