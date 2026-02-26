@@ -82,7 +82,7 @@ define(['./workbox-52f2a342'], (function (workbox) { 'use strict';
     "revision": "8e3a10e157f75ada21ab742c022d5430"
   }, {
     "url": "config.json",
-    "revision": "0725c7a5e5e559a1c4cba6406ae03758"
+    "revision": "d88b4df84632a196da3a405ffc31b752"
   }, {
     "url": "assets/workbox-window.prod.es5-BIl4cyR9.js",
     "revision": null
