@@ -1,4 +1,5 @@
 {
-    "isBarcodeScannerDemo": false
+    "isBarcodeScannerDemo": true,
+    "isDemo2": true
 }
   
