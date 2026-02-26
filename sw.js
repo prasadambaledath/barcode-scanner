@@ -94,7 +94,7 @@ define(['./workbox-52f2a342'], (function (workbox) { 'use strict';
     "revision": "2952f73dd596ad4682a521a4648754d1"
   }], {});
   workbox.cleanupOutdatedCaches();
-  workbox.registerRoute(new workbox.NavigationRoute(workbox.createHandlerBoundToURL("/index.html"), {
+  workbox.registerRoute(new workbox.NavigationRoute(workbox.createHandlerBoundToURL("index.html"), {
     denylist: [/^\/api/, /^\/auth/]
   }));
   workbox.registerRoute(/\.html$/, new workbox.NetworkFirst({
