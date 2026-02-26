@@ -81,6 +81,9 @@ define(['./workbox-52f2a342'], (function (workbox) { 'use strict';
     "url": "vite.svg",
     "revision": "8e3a10e157f75ada21ab742c022d5430"
   }, {
+    "url": "index.html",
+    "revision": "dccfc49470c04fbd696ce2ac1418eff6"
+  }, {
     "url": "config.json",
     "revision": "0725c7a5e5e559a1c4cba6406ae03758"
   }, {
