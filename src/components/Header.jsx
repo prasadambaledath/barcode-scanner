@@ -5,7 +5,7 @@ function Header() {
     <header className="fixed top-0 left-0 right-0 bg-white shadow-md z-40">
       <div className="max-w-4xl mx-auto px-4 py-3 flex items-center justify-between">
         <h1 className="text-lg font-semibold text-gray-800">
-          📷 QR/Barcode Scanner Demo 1
+          📷 QR/Barcode Scanner Demo 2
         </h1>
         <nav className="flex gap-1">
           <NavLink
