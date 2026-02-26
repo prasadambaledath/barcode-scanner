@@ -84,9 +84,6 @@ define(['./workbox-52f2a342'], (function (workbox) { 'use strict';
     "url": "registerSW.js",
     "revision": "acc3284fd435838673d746f3ed1bf150"
   }, {
-    "url": "index.html",
-    "revision": "30f3b2c5510496ba79f0458b8075c570"
-  }, {
     "url": "assets/index-C-H8b6Bm.css",
     "revision": null
   }, {
@@ -94,7 +91,7 @@ define(['./workbox-52f2a342'], (function (workbox) { 'use strict';
     "revision": "2952f73dd596ad4682a521a4648754d1"
   }], {});
   workbox.cleanupOutdatedCaches();
-  workbox.registerRoute(new workbox.NavigationRoute(workbox.createHandlerBoundToURL("index.html"), {
+  workbox.registerRoute(new workbox.NavigationRoute(workbox.createHandlerBoundToURL("/index.html"), {
     denylist: [/^\/api/, /^\/auth/]
   }));
   workbox.registerRoute(/\.html$/, new workbox.NetworkFirst({
