@@ -21,7 +21,7 @@ function Demo1() {
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center p-6 bg-gradient-to-br from-indigo-100 to-purple-100 gap-6">
-      <h1 className="text-2xl text-gray-800 font-semibold">QR/Barcode Scanner Demo 2</h1>
+      <h1 className="text-2xl text-gray-800 font-semibold">QR/Barcode Scanner Demo</h1>
       <p className="text-sm text-gray-500 -mt-4">Using '@yudiel/react-qr-scanner'</p>
 
       <div className="bg-white shadow-lg rounded-2xl p-6 w-full max-w-lg flex flex-col gap-4">
