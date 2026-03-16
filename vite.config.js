@@ -1,6 +1,8 @@
 import { defineConfig } from 'vite'
+import { copyFileSync } from 'fs'
+import { join } from 'path'
 import react from '@vitejs/plugin-react'
-import { VitePWA } from 'vite-plugin-pwa';
+import { VitePWA } from 'vite-plugin-pwa'
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -86,6 +88,32 @@ export default defineConfig({
         enabled: false,
       },
     }),
+    {
+      name: 'copy-404-for-github-pages',
+      closeBundle() {
+        const outDir = join(process.cwd(), 'dist')
+        copyFileSync(join(outDir, 'index.html'), join(outDir, '404.html'))
+      },
+    },
+    {
+      name: 'redirect-root-to-base',
+      enforce: 'pre',
+      configureServer(server) {
+        server.middlewares.use((req, res, next) => {
+          const url = req.url?.split('?')[0] || '';
+          if (url === '/' || url === '' || url === '/barcode-scanner') {
+            res.statusCode = 302;
+            res.setHeader('Location', '/barcode-scanner/');
+            res.end();
+          } else {
+            next();
+          }
+        });
+      },
+    },
   ],
-  base: '/barcode-scanner/'
+  base: '/barcode-scanner/',
+  server: {
+    open: '/barcode-scanner/',
+  },
 })

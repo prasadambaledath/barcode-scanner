@@ -21,7 +21,7 @@ function Demo1() {
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center p-6 bg-gradient-to-br from-indigo-100 to-purple-100 gap-6">
-      <h1 className="text-2xl text-gray-800 font-semibold">QR/Barcode Scanner Demo</h1>
+      <h1 className="text-2xl text-gray-800 font-semibold">Demo 1</h1>
       <p className="text-sm text-gray-500 -mt-4">Using '@yudiel/react-qr-scanner'</p>
 
       <div className="bg-white shadow-lg rounded-2xl p-6 w-full max-w-lg flex flex-col gap-4">
@@ -37,9 +37,9 @@ function Demo1() {
           />
           <button
             onClick={() => handleOpenScanner(setField1)}
-            className="px-4 py-2 rounded-xl bg-indigo-600 text-white hover:bg-indigo-700 transition-colors"
+            className="shrink-0 min-w-[44px] min-h-[44px] flex items-center justify-center p-2 rounded-xl bg-indigo-600 text-white hover:bg-indigo-700 transition-colors"
           >
-            <img src={BarCodeImg} alt="Scan" width={32} />
+            <img src={BarCodeImg} alt="Scan" className="w-8 h-8 object-contain" />
           </button>
         </div>
 
@@ -55,9 +55,9 @@ function Demo1() {
           />
           <button
             onClick={() => handleOpenScanner(setField2)}
-            className="px-4 py-2 rounded-xl bg-indigo-600 text-white hover:bg-indigo-700 transition-colors"
+            className="shrink-0 min-w-[44px] min-h-[44px] flex items-center justify-center p-2 rounded-xl bg-indigo-600 text-white hover:bg-indigo-700 transition-colors"
           >
-            <img src={BarCodeImg} alt="Scan" width={32} />
+            <img src={BarCodeImg} alt="Scan" className="w-8 h-8 object-contain" />
           </button>
         </div>
       </div>

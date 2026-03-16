@@ -36,9 +36,9 @@ function Demo2() {
           />
           <button
             onClick={() => handleOpenScanner(setField1)}
-            className="px-4 py-2 rounded-xl bg-blue-600 text-white hover:bg-blue-700 transition-colors"
+            className="shrink-0 min-w-[44px] min-h-[44px] flex items-center justify-center p-2 rounded-xl bg-blue-600 text-white hover:bg-blue-700 transition-colors"
           >
-            <img src={BarCodeImg} alt="Scan" width={32} />
+            <img src={BarCodeImg} alt="Scan" className="w-8 h-8 object-contain" />
           </button>
         </div>
 
@@ -54,9 +54,9 @@ function Demo2() {
           />
           <button
             onClick={() => handleOpenScanner(setField2)}
-            className="px-4 py-2 rounded-xl bg-blue-600 text-white hover:bg-blue-700 transition-colors"
+            className="shrink-0 min-w-[44px] min-h-[44px] flex items-center justify-center p-2 rounded-xl bg-blue-600 text-white hover:bg-blue-700 transition-colors"
           >
-            <img src={BarCodeImg} alt="Scan" width={32} />
+            <img src={BarCodeImg} alt="Scan" className="w-8 h-8 object-contain" />
           </button>
         </div>
       </div>

@@ -1,14 +1,16 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Demo1 from "./pages/Demo1";
 import Demo2 from "./pages/Demo2";
+import Header from "./components/Header";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/barcode-scanner">
       <main>
+        <Header />
         <Routes>
-          <Route path="/barcode-scanner" element={<Demo1 />} />
-          <Route path="/barcode-scanner/demo2" element={<Demo2 />} />
+          <Route path="/" element={<Demo1 />} />
+          <Route path="/demo2" element={<Demo2 />} />
         </Routes>
       </main>
     </BrowserRouter>
